@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AdditionServiceImplTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-13T15:02:39" hostname="DESKTOP-473A5QG" time="0.971">
+  <properties/>
+  <testcase name="testThatNormalSumWorks()" classname="AdditionServiceImplTest" time="0.971"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
