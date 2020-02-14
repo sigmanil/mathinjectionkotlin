@@ -1,3 +1,6 @@
+package smn.mathinjectionkotlin.service
+
+import smn.mathinjectionkotlin.DefaultTestRegistry
 import io.mockk.every
 import io.mockk.verify
 import org.junit.jupiter.api.Assertions.*
@@ -5,7 +8,8 @@ import org.junit.jupiter.api.Assertions.*
 internal class SubtractionServiceImplTest {
 
     val testRegistry = object : DefaultTestRegistry() {
-        override val subtractionService = SubtractionServiceImpl(this)
+        override val subtractionService =
+            SubtractionServiceImpl(this)
     }
 
     @org.junit.jupiter.api.Test

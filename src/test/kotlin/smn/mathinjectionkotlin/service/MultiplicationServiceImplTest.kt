@@ -1,3 +1,6 @@
+package smn.mathinjectionkotlin.service
+
+import smn.mathinjectionkotlin.ComponentRegistry
 import io.mockk.*
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Assertions.*
@@ -7,7 +10,8 @@ internal class MultiplicationServiceImplTest {
     val testRegistry = object : ComponentRegistry {
         override val subtractionService = mockk<SubtractionService>()
         override val additionService = mockk<AdditionService>()
-        override val multiplicationService = MultiplicationServiceImpl(this)
+        override val multiplicationService =
+            MultiplicationServiceImpl(this)
         override val divisionService = mockk<DivisionService>()
         override val powerService = mockk<PowerService>()
         override val minusService = mockk<MinusService>()

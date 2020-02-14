@@ -1,4 +1,4 @@
-import java.lang.IllegalArgumentException
+package smn.mathinjectionkotlin.service
 
 interface MinusService {
     fun minus(operand: Int): Int

@@ -1,6 +1,6 @@
-
+package smn.mathinjectionkotlin.service
+import smn.mathinjectionkotlin.DefaultTestRegistry
 import org.junit.jupiter.api.Test
-import io.mockk.mockk
 import io.mockk.every
 import io.mockk.slot
 import io.mockk.verify

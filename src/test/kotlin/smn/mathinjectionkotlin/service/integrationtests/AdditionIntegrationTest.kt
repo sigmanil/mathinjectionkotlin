@@ -1,8 +1,6 @@
-
+package smn.mathinjectionkotlin.service.integrationtests
+import smn.mathinjectionkotlin.ProductionRegistry
 import org.junit.jupiter.api.Test
-import io.mockk.mockk
-import io.mockk.every
-import io.mockk.verify
 import org.junit.jupiter.api.Assertions.*
 
 internal class AdditionIntegrationTest {

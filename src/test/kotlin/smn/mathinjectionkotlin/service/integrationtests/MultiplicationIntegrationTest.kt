@@ -1,4 +1,5 @@
-
+package smn.mathinjectionkotlin.service.integrationtests
+import smn.mathinjectionkotlin.ProductionRegistry
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Assertions.*
 

@@ -1,4 +1,8 @@
+package smn.mathinjectionkotlin
+
 import io.mockk.mockk
+import smn.mathinjectionkotlin.ComponentRegistry
+import smn.mathinjectionkotlin.service.*
 
 open class DefaultTestRegistry: ComponentRegistry {
     override val subtractionService = mockk<SubtractionService>()

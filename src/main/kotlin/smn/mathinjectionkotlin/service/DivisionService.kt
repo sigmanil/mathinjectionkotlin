@@ -1,13 +1,17 @@
+package smn.mathinjectionkotlin.service
+
 interface DivisionService {
     fun quotientAndRemainder(dividend: Int, divisor: Int): Pair<Int,Int>
 
 }
 
-interface DivisionServiceComponent: SubtractionServiceComponent, AdditionServiceComponent {
+interface DivisionServiceComponent: SubtractionServiceComponent,
+    AdditionServiceComponent {
     val divisionService: DivisionService
 }
 
-class DivisionServiceImpl(private val registry: DivisionServiceComponent): DivisionService {
+class DivisionServiceImpl(private val registry: DivisionServiceComponent):
+    DivisionService {
     override fun quotientAndRemainder(dividend: Int, divisor: Int): Pair<Int,Int> {
         var remainder = dividend
         var count: Int = 0

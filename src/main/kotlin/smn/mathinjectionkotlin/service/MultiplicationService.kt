@@ -1,12 +1,16 @@
+package smn.mathinjectionkotlin.service
+
 interface MultiplicationService {
     fun product(factor1: Int, factor2: Int): Int
 }
 
-interface MultiplicationServiceComponent: AdditionServiceComponent, MinusServiceComponent {
+interface MultiplicationServiceComponent: AdditionServiceComponent,
+    MinusServiceComponent {
     val multiplicationService: MultiplicationService
 }
 
-class MultiplicationServiceImpl(private val registry: MultiplicationServiceComponent): MultiplicationService {
+class MultiplicationServiceImpl(private val registry: MultiplicationServiceComponent):
+    MultiplicationService {
     override fun product(factor1: Int, factor2: Int): Int {
         if (factor1 == 0 || factor2 == 0) {
             return 0

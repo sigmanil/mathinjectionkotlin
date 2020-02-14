@@ -1,6 +1,9 @@
+package smn.mathinjectionkotlin.service
+
 import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*
+import smn.mathinjectionkotlin.service.MinusServiceImpl
 
 internal class MinusServiceImplTest {
 
