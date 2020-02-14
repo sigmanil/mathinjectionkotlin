@@ -1,5 +1,6 @@
 interface DivisionService {
-    fun divide(a: Int, b: Int): Int
+    fun quotientAndRemainder(dividend: Int, divisor: Int): Pair<Int,Int>
+
 }
 
 interface DivisionServiceComponent: SubtractionServiceComponent, AdditionServiceComponent {
@@ -7,13 +8,13 @@ interface DivisionServiceComponent: SubtractionServiceComponent, AdditionService
 }
 
 class DivisionServiceImpl(private val registry: DivisionServiceComponent): DivisionService {
-    override fun divide(a: Int, b: Int): Int {
-        var rest = a
+    override fun quotientAndRemainder(dividend: Int, divisor: Int): Pair<Int,Int> {
+        var remainder = dividend
         var count: Int = 0
-        while(rest > b) {
-            rest = registry.subtractionService.difference(rest, b)
+        while(remainder > divisor) {
+            remainder = registry.subtractionService.difference(remainder, divisor)
             count = registry.additionService.sum(count, 1)
         }
-        return count
+        return Pair(count, remainder)
     }
 }
