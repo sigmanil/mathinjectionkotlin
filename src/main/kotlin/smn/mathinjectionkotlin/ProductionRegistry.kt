@@ -11,8 +11,8 @@ class ProductionRegistry: ComponentRegistry {
         MultiplicationServiceImpl(this)
     override val divisionService: DivisionService =
         DivisionServiceImpl(this)
-    override val powerService: PowerService =
-        PowerServiceImpl(this)
+    override val exponentiationService: ExponentiationService =
+        ExponentiationServiceImpl(this)
     override val minusService: MinusService =
         MinusServiceImpl()
 }

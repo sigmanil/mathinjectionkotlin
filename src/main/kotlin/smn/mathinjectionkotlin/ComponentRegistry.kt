@@ -6,5 +6,5 @@ interface ComponentRegistry: SubtractionServiceComponent,
     AdditionServiceComponent,
     MultiplicationServiceComponent,
     DivisionServiceComponent,
-    PowerServiceComponent,
+    ExponentiationServiceComponent,
     MinusServiceComponent

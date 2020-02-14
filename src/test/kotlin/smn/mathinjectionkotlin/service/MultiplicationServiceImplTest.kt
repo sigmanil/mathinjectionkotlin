@@ -13,7 +13,7 @@ internal class MultiplicationServiceImplTest {
         override val multiplicationService =
             MultiplicationServiceImpl(this)
         override val divisionService = mockk<DivisionService>()
-        override val powerService = mockk<PowerService>()
+        override val exponentiationService = mockk<ExponentiationService>()
         override val minusService = mockk<MinusService>()
     }
 
